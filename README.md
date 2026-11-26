@@ -6,7 +6,7 @@ A map of the cities Nat and Mel have lived in and visited, at <https://map.natwe
 
 ```sh
 nvm use
-npm install --global pnpm@12.24.0
+npm install --global pnpm@12.16.1
 npm config set //npm.pkg.github.com/:_authToken "$(gh auth token)"
 pnpm install --frozen-lockfile
 pnpm dev

@@ -3,7 +3,7 @@ ENV NEXT_TELEMETRY_DISABLED=1
 WORKDIR /app
 
 FROM base AS deps
-RUN npm install --global pnpm@12.24.0
+RUN npm install --global pnpm@12.16.1
 COPY package.json pnpm-lock.yaml pnpm-workspace.yaml .npmrc ./
 RUN --mount=type=secret,id=npm_token,required=true \
     --mount=type=cache,id=pnpm,target=/pnpm/store \
