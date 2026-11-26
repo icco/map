@@ -88,6 +88,20 @@ try {
   assert.equal(sitemap.status, 200)
   assert.match(await sitemap.text(), /<urlset/)
   assert.equal((await fetch(`${base}/icon.svg`)).status, 200)
+  const geojson = await (await fetch(`${base}/places.geojson`)).json()
+  assert.equal(geojson.type, "FeatureCollection")
+  const dots = document.querySelectorAll("svg [data-place]")
+  assert.equal(dots.length, geojson.features.length)
+  for (const { id, properties } of geojson.features) {
+    assert.ok(document.querySelector(`svg [data-place="${id}"]`), id)
+    const photo = await fetch(base + properties.photo)
+    assert.equal(photo.status, 200, properties.photo)
+    assert.match(photo.headers.get("content-type") || "", /^image\//)
+  }
+  const world = await fetch(`${base}/world.svg`)
+  assert.equal(world.status, 200)
+  assert.match(world.headers.get("content-type") || "", /image\/svg\+xml/)
+  assert.match(await world.text(), /<path id="land" d="M/)
   const missing = await fetch(`${base}/this-page-does-not-exist`)
   assert.equal(missing.status, 404)
   const missingDocument = new JSDOM(await missing.text()).window.document
