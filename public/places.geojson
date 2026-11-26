@@ -6,6 +6,7 @@
       "id": "los-gatos",
       "properties": {
         "city": "Los Gatos, California",
+        "country": "United States",
         "kind": "lived",
         "year": null,
         "photo": "/photos/los-gatos.jpg",
@@ -23,6 +24,7 @@
       "id": "los-altos",
       "properties": {
         "city": "Los Altos, California",
+        "country": "United States",
         "kind": "lived",
         "year": null,
         "photo": "/photos/los-altos.jpg",
@@ -40,6 +42,7 @@
       "id": "santa-rosa",
       "properties": {
         "city": "Santa Rosa, California",
+        "country": "United States",
         "kind": "lived",
         "year": 2005,
         "photo": "/photos/santa-rosa.jpg",
@@ -57,6 +60,7 @@
       "id": "huntington-lake",
       "properties": {
         "city": "Huntington Lake, California",
+        "country": "United States",
         "kind": "visited",
         "year": 2002,
         "endYear": 2006,
@@ -75,6 +79,7 @@
       "id": "san-luis-obispo",
       "properties": {
         "city": "San Luis Obispo, California",
+        "country": "United States",
         "kind": "lived",
         "year": 2006,
         "endYear": 2011,
@@ -93,6 +98,7 @@
       "id": "mountain-view",
       "properties": {
         "city": "Mountain View, California",
+        "country": "United States",
         "kind": "visited",
         "year": 2011,
         "photo": "/photos/mountain-view.jpg",
@@ -110,6 +116,7 @@
       "id": "san-francisco",
       "properties": {
         "city": "San Francisco, California",
+        "country": "United States",
         "kind": "lived",
         "year": 2011,
         "endYear": 2014,
@@ -128,6 +135,7 @@
       "id": "seattle",
       "properties": {
         "city": "Seattle, Washington",
+        "country": "United States",
         "kind": "lived",
         "year": null,
         "photo": "/photos/seattle.jpg",
@@ -145,6 +153,7 @@
       "id": "london",
       "properties": {
         "city": "London, England",
+        "country": "United Kingdom",
         "kind": "lived",
         "year": 2014,
         "endYear": 2015,
@@ -163,6 +172,7 @@
       "id": "new-york",
       "properties": {
         "city": "New York, New York",
+        "country": "United States",
         "kind": "lived",
         "year": 2015,
         "photo": "/photos/new-york.jpg",
@@ -180,6 +190,7 @@
       "id": "montreal",
       "properties": {
         "city": "Montreal, Quebec",
+        "country": "Canada",
         "kind": "visited",
         "year": 2016,
         "photo": "/photos/montreal.jpg",
@@ -197,6 +208,7 @@
       "id": "lake-almanor",
       "properties": {
         "city": "Lake Almanor, California",
+        "country": "United States",
         "kind": "visited",
         "year": 2017,
         "photo": "/photos/lake-almanor.jpg",
@@ -214,6 +226,7 @@
       "id": "beacon",
       "properties": {
         "city": "Beacon, New York",
+        "country": "United States",
         "kind": "lived",
         "year": null,
         "photo": "/photos/beacon.jpg",
@@ -231,6 +244,7 @@
       "id": "cambridge",
       "properties": {
         "city": "Cambridge, England",
+        "country": "United Kingdom",
         "kind": "lived",
         "year": 2026,
         "photo": "/photos/cambridge.jpg",

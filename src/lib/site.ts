@@ -5,7 +5,10 @@ export const site = {
   description: "The cities Nat and Mel have lived in and visited.",
   url: "https://map.natwelch.com",
   repository: "https://github.com/icco/map",
-  navigation: [{ name: "Map", href: "/" }] satisfies NavLink[],
+  navigation: [
+    { name: "Map", href: "/" },
+    { name: "Stats", href: "/stats" },
+  ] satisfies NavLink[],
   analyticsPath: "",
   footer: {
     showRecurseCenter: true,
