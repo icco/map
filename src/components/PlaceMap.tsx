@@ -7,6 +7,7 @@ import {
   type ZoomBehavior,
   zoomIdentity,
   type ZoomTransform,
+  zoomTransform,
 } from "d3-zoom"
 import {
   type MouseEvent as ReactMouseEvent,
@@ -98,7 +99,6 @@ export function PlaceMap({
         [0, 0],
         [width, height],
       ])
-      // Plain scrolling stays with the page; pinch and ctrl+scroll zoom.
       .filter((event: Event) =>
         event instanceof WheelEvent
           ? event.ctrlKey || event.metaKey
@@ -109,6 +109,22 @@ export function PlaceMap({
       )
     zoomRef.current = behavior
     const selection = select(svg).call(behavior)
+
+    let pxPerUnit = 1
+    // Pinch and ctrl+scroll zoom through d3; plain scrolling and trackpad swipes pan.
+    const onWheel = (event: WheelEvent) => {
+      if (event.ctrlKey || event.metaKey) return
+      event.preventDefault()
+      const page = event.deltaMode === WheelEvent.DOM_DELTA_PAGE
+      const line = event.deltaMode === WheelEvent.DOM_DELTA_LINE ? 16 : 1
+      const unit = pxPerUnit * zoomTransform(svg).k
+      behavior.translateBy(
+        selection,
+        (-event.deltaX * (page ? svg.clientWidth : line)) / unit,
+        (-event.deltaY * (page ? svg.clientHeight : line)) / unit
+      )
+    }
+    svg.addEventListener("wheel", onWheel, { passive: false })
 
     let placed = false
     // The SVG is cropped to fill its box, so tell d3 which part is visible.
@@ -124,6 +140,7 @@ export function PlaceMap({
         [left, top],
         [left + visibleWidth, top + visibleHeight],
       ])
+      pxPerUnit = next
       setScale(next)
 
       const xs = allPlaces.map((place) => place.x).sort((a, b) => a - b)
@@ -179,6 +196,7 @@ export function PlaceMap({
     observer.observe(svg)
     return () => {
       observer.disconnect()
+      svg.removeEventListener("wheel", onWheel)
       selection.on(".zoom", null)
     }
   }, [width, height, allPlaces])
