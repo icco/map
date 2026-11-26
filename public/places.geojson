@@ -1,0 +1,247 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "los-gatos",
+      "properties": {
+        "city": "Los Gatos, California",
+        "kind": "lived",
+        "year": null,
+        "photo": "/photos/los-gatos.jpg",
+        "photoCredit": "Ramkumar Menon, CC BY-SA 4.0",
+        "photoSource": "https://commons.wikimedia.org/wiki/File:La_Canada_Building.jpg",
+        "description": "Nat was born in the San Francisco Bay Area in 1988. Los Gatos was one of the places he called home there."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-121.96, 37.23]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "los-altos",
+      "properties": {
+        "city": "Los Altos, California",
+        "kind": "lived",
+        "year": null,
+        "photo": "/photos/los-altos.jpg",
+        "photoCredit": "Coolcaesar, CC BY-SA 3.0",
+        "photoSource": "https://commons.wikimedia.org/wiki/File:Los_Altos_entrance_sign_2a.jpg",
+        "description": "Another of Nat's Bay Area homes, tucked between the foothills and the rest of Silicon Valley."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-122.11, 37.38]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "santa-rosa",
+      "properties": {
+        "city": "Santa Rosa, California",
+        "kind": "lived",
+        "year": 2005,
+        "photo": "/photos/santa-rosa.jpg",
+        "photoCredit": "Wulfnoth, CC BY 3.0",
+        "photoSource": "https://commons.wikimedia.org/wiki/File:Old_Santa_Rosa_Post_Office,_Downtown_Santa_Rosa,2.jpg",
+        "description": "Home in Sonoma County. Nat spent the summer of 2005 here as a software development intern for the County of Sonoma."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-122.71, 38.44]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "huntington-lake",
+      "properties": {
+        "city": "Huntington Lake, California",
+        "kind": "visited",
+        "year": 2002,
+        "endYear": 2006,
+        "photo": "/photos/huntington-lake.jpg",
+        "photoCredit": "USFS Region 5, Public domain",
+        "photoSource": "https://commons.wikimedia.org/wiki/File:Huntington_Lake_(3717098437).jpg",
+        "description": "Camp Oljato, a Scout camp on Huntington Lake in the Sierra Nevada. Nat was a camp counselor here from 2002 to 2004 and came back as Nature Director in 2006."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-119.18, 37.24]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "san-luis-obispo",
+      "properties": {
+        "city": "San Luis Obispo, California",
+        "kind": "lived",
+        "year": 2006,
+        "endYear": 2011,
+        "photo": "/photos/san-luis-obispo.jpg",
+        "photoCredit": "Rennett Stowe, CC BY 2.0",
+        "photoSource": "https://commons.wikimedia.org/wiki/File:Mission_San_Luis_Obispo_(cropped).jpg",
+        "description": "Nat studied Computer Science at Cal Poly from the fall of 2006 to the spring of 2011.\n\nAlong the way he staffed the department's computer lab, and from 2009 to 2011 he worked at iFixit, where he built Answers and wrote the first oManual specification."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-120.66, 35.28]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "mountain-view",
+      "properties": {
+        "city": "Mountain View, California",
+        "kind": "visited",
+        "year": 2011,
+        "photo": "/photos/mountain-view.jpg",
+        "photoCredit": "Dicklyon, CC BY-SA 4.0",
+        "photoSource": "https://commons.wikimedia.org/wiki/File:Moffett_Field.jpg",
+        "description": "Nat joined Google in 2011 when it acquired Punchd, and worked out of Google's Mobile Apps Lab here."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-122.08, 37.39]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "san-francisco",
+      "properties": {
+        "city": "San Francisco, California",
+        "kind": "lived",
+        "year": 2011,
+        "endYear": 2014,
+        "photo": "/photos/san-francisco.jpg",
+        "photoCredit": "Craig Howell, CC BY 2.0",
+        "photoSource": "https://commons.wikimedia.org/wiki/File:Zeppelin-ride-020100925-195_(5029394846).jpg",
+        "description": "Nat first worked in San Francisco as a Dreamweaver intern at Adobe in the summers of 2007 and 2008.\n\nHe came back after college and lived in the city while working at Google, where he became a Site Reliability Engineer on Google Compute Engine.\n\nWhen he left in early 2014 he finally felt alright sharing his favorite restaurants and bars, and wrote them all down on his way out."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-122.42, 37.77]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "seattle",
+      "properties": {
+        "city": "Seattle, Washington",
+        "kind": "lived",
+        "year": null,
+        "photo": "/photos/seattle.jpg",
+        "photoCredit": "Jeffery Hayes, CC BY-SA 3.0",
+        "photoSource": "https://commons.wikimedia.org/wiki/File:Seattle_Center_as_night_falls.jpg",
+        "description": "Nat lived in Seattle for a while and worked from Google's office in Fremont."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-122.33, 47.61]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "london",
+      "properties": {
+        "city": "London, England",
+        "kind": "lived",
+        "year": 2014,
+        "endYear": 2015,
+        "photo": "/photos/london.jpg",
+        "photoCredit": "Ilya Grigorik, CC BY-SA 3.0",
+        "photoSource": "https://commons.wikimedia.org/wiki/File:London_Skyline_(125508655).jpeg",
+        "description": "Nat spent a year in London as a Site Reliability Engineer on Google Compute Engine.\n\nBy his own account it did not go great: too much work and not enough people. He did eat well, and left a list of his favorite food spots behind when he moved on in March 2015."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-0.13, 51.51]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "new-york",
+      "properties": {
+        "city": "New York, New York",
+        "kind": "lived",
+        "year": 2015,
+        "photo": "/photos/new-york.jpg",
+        "photoCredit": "Dllu, CC BY-SA 4.0",
+        "photoSource": "https://commons.wikimedia.org/wiki/File:View_of_Empire_State_Building_from_Rockefeller_Center_New_York_City_dllu_(cropped).jpg",
+        "description": "Nat came to New York for the Recurse Center in the spring of 2015 and stayed, settling in Brooklyn. Over the next few years he worked at littleBits, Hillary for America, First Look Media and Google.\n\nMel and Nat met on the Hillary Clinton 2016 presidential campaign, where they both worked in the Brooklyn headquarters. Mel was on the Research team and Nat was on the Tech team. Mel has a deep love of dogs, and a dog named Winnie sat next to Nat at the office, so Mel came by to pet Winnie almost every day.\n\nTheir first date was a Thundercat show at the Brooklyn Bowl. Because the campaign was seven days a week, they saw each other every day, and by the end of the summer conventions they were deeply in love.\n\nAfter the campaign ended they both decided to stay in Brooklyn. By May of 2017 they were living together, along with Mel's cat Beasley, who took to Nat quite well.\n\nMel and Nat were married in Prospect Park on May 12th, 2018."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-74, 40.71]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "montreal",
+      "properties": {
+        "city": "Montreal, Quebec",
+        "kind": "visited",
+        "year": 2016,
+        "photo": "/photos/montreal.jpg",
+        "photoCredit": "Quintin Soloviev, CC BY 4.0",
+        "photoSource": "https://commons.wikimedia.org/wiki/File:Montreal,_Quebec_skyline.jpg",
+        "description": "After the 2016 campaign ended, Mel and Nat traveled to Montreal that December, visiting snowy places and trying to detox from all of the politics."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.57, 45.5]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "lake-almanor",
+      "properties": {
+        "city": "Lake Almanor, California",
+        "kind": "visited",
+        "year": 2017,
+        "photo": "/photos/lake-almanor.jpg",
+        "photoCredit": "Kmmontandon, Public domain",
+        "photoSource": "https://commons.wikimedia.org/wiki/File:LakeAlmanor2.jpg",
+        "description": "Nat's family has a cabin near Lake Almanor, in the mountains of Northern California.\n\nOn Christmas Day 2017, Nat drove Mel out to the tip of the peninsula and, sitting on a bench, proposed. He had a speech written, but fell apart after about two sentences. She said yes."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-121.17, 40.25]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "beacon",
+      "properties": {
+        "city": "Beacon, New York",
+        "kind": "lived",
+        "year": null,
+        "photo": "/photos/beacon.jpg",
+        "photoCredit": "Mahopa, CC BY-SA 3.0",
+        "photoSource": "https://commons.wikimedia.org/wiki/File:Beaconpic.jpg",
+        "description": "Mel and Nat's home in the Hudson Valley, shared with their cat, before the move to England."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.97, 41.5]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "cambridge",
+      "properties": {
+        "city": "Cambridge, England",
+        "kind": "lived",
+        "year": 2026,
+        "photo": "/photos/cambridge.jpg",
+        "photoCredit": "Jean-Christophe BENOIST, CC BY-SA 4.0",
+        "photoSource": "https://commons.wikimedia.org/wiki/File:Cambridge_-_Kings_College_vue_des_backs.jpg",
+        "description": "Mel started her PhD in Criminology at the University of Cambridge in the fall of 2026, and Nat moved with her. After five weeks in a hotel they settled into a terrace house.\n\nNat calls it UK 2: The Revenge Tour."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [0.12, 52.21]
+      }
+    }
+  ]
+}
