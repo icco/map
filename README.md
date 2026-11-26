@@ -59,6 +59,7 @@ The file is validated when the page renders, so `pnpm test:smoke` fails on a bad
 | `pnpm build`      | Production build with standalone output                   |
 | `pnpm start`      | Local production server (`PORT`, default 8080)            |
 | `pnpm test:smoke` | Start the production server and check the map and headers |
+| `pnpm test:e2e`   | Screenshot the map into `e2e/screenshots/`                |
 
 ## How it works
 

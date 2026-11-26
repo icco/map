@@ -21,7 +21,8 @@
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "check": "pnpm lint && pnpm type-check && pnpm format:check",
-    "test:smoke": "node scripts/smoke.mjs"
+    "test:smoke": "node scripts/smoke.mjs",
+    "test:e2e": "playwright test"
   },
   "dependencies": {
     "@heroicons/react": "^2.2.0",
@@ -39,6 +40,7 @@
   },
   "devDependencies": {
     "@eslint/compat": "^2.1.1",
+    "@playwright/test": "^1.65.1",
     "@tailwindcss/postcss": "^4.3.3",
     "@types/d3-geo": "^3.1.1",
     "@types/d3-selection": "^3.0.13",
