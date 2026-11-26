@@ -3,7 +3,7 @@ import type { Metadata } from "next"
 import { PlaceMap } from "@/components/PlaceMap"
 import { getPlaces } from "@/lib/places"
 import { site } from "@/lib/site"
-import { HEIGHT, project, spherePath, WIDTH } from "@/lib/world"
+import { graticulePath, HEIGHT, project, spherePath, WIDTH } from "@/lib/world"
 
 export const metadata: Metadata = { alternates: { canonical: "/" } }
 
@@ -14,17 +14,13 @@ export default function Home() {
   })
 
   return (
-    <div className="w-full py-8">
-      <div className="mx-auto w-full max-w-[800px] px-4">
-        <h1 className="text-[32px] leading-tight font-normal">{site.name}</h1>
-        <p className="mt-2 mb-6 text-base-content/70">{site.description}</p>
-      </div>
-      <PlaceMap
-        places={places}
-        width={WIDTH}
-        height={HEIGHT}
-        spherePath={spherePath}
-      />
-    </div>
+    <PlaceMap
+      title={site.name}
+      places={places}
+      width={WIDTH}
+      height={HEIGHT}
+      spherePath={spherePath}
+      graticulePath={graticulePath}
+    />
   )
 }

@@ -9,7 +9,7 @@ Next.js App Router, React, strict TypeScript, Tailwind CSS, and daisyUI.
 - Places live in `public/places.geojson`, validated by `src/lib/places.ts`. Use city coordinates only, never street addresses. Each place lists `visits` with a `who` of `nat`, `mel`, or `both`; keep other people's names out of the file. Photos go in `public/photos/`.
 - `/world.svg` is prerendered from `src/lib/world.ts`; the map uses no tiles or third-party requests.
 - Shared UI comes from `@icco/react-common` component subpaths. Configure navigation, footer features, and analytics in `src/lib/site.ts`; the root layout owns the main landmark.
-- Package installs need `NODE_AUTH_TOKEN` with GitHub Packages read access; Docker accepts it via the `npm_token` BuildKit secret.
+- Package installs need a GitHub Packages read token in the user `~/.npmrc`, not the repository `.npmrc`; CI writes it from `NODE_AUTH_TOKEN`, and Docker accepts it via the `npm_token` BuildKit secret.
 - Use two spaces, double quotes, and no semicolons; Prettier sorts Tailwind classes and ESLint sorts imports.
 - Run `pnpm check`, `pnpm build`, and `pnpm test:smoke` before submitting changes.
 - Keep secrets server-side and out of git and Docker build arguments.

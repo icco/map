@@ -6,13 +6,13 @@ A map of the cities Nat and Mel have lived in and visited, at <https://map.natwe
 
 ```sh
 nvm use
-npm install --global pnpm@11.2.2
-export NODE_AUTH_TOKEN="$(gh auth token)"
+npm install --global pnpm@12.16.1
+npm config set //npm.pkg.github.com/:_authToken "$(gh auth token)"
 pnpm install --frozen-lockfile
 pnpm dev
 ```
 
-Open <http://localhost:8080>. `NODE_AUTH_TOKEN` needs `read:packages` to install `@icco/react-common` from GitHub Packages.
+Open <http://localhost:8080>. The token needs `read:packages` to install `@icco/react-common` from GitHub Packages.
 
 ## Add a place
 
@@ -59,6 +59,7 @@ The file is validated when the page renders, so `pnpm test:smoke` fails on a bad
 | `pnpm build`      | Production build with standalone output                   |
 | `pnpm start`      | Local production server (`PORT`, default 8080)            |
 | `pnpm test:smoke` | Start the production server and check the map and headers |
+| `pnpm test:e2e`   | Screenshot the map into `e2e/screenshots/`                |
 
 ## How it works
 

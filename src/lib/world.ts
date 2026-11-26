@@ -1,4 +1,4 @@
-import { geoEqualEarth, geoPath } from "d3-geo"
+import { geoEqualEarth, geoGraticule10, geoPath } from "d3-geo"
 import type { FeatureCollection } from "geojson"
 import { feature } from "topojson-client"
 import type { GeometryCollection, Topology } from "topojson-specification"
@@ -12,6 +12,8 @@ const path = geoPath(projection).digits(2)
 export const HEIGHT = Math.ceil(path.bounds({ type: "Sphere" })[1][1])
 
 export const spherePath = path({ type: "Sphere" }) ?? ""
+
+export const graticulePath = path(geoGraticule10()) ?? ""
 
 export function landPath(): string {
   const topology = landTopology as unknown as Topology<{
