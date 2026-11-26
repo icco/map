@@ -7,12 +7,12 @@ A map of the cities Nat and Mel have lived in and visited, at <https://map.natwe
 ```sh
 nvm use
 npm install --global pnpm@11.2.2
-export NODE_AUTH_TOKEN="$(gh auth token)"
+npm config set //npm.pkg.github.com/:_authToken "$(gh auth token)"
 pnpm install --frozen-lockfile
 pnpm dev
 ```
 
-Open <http://localhost:8080>. `NODE_AUTH_TOKEN` needs `read:packages` to install `@icco/react-common` from GitHub Packages.
+Open <http://localhost:8080>. The token needs `read:packages` to install `@icco/react-common` from GitHub Packages.
 
 ## Add a place
 

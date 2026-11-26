@@ -28,6 +28,7 @@ jobs:
         with:
           node-version-file: .nvmrc
           cache: pnpm
+      - run: printf '%s\n' '//npm.pkg.github.com/:_authToken=${NODE_AUTH_TOKEN}' >> ~/.npmrc
       - run: pnpm install --frozen-lockfile
       - name: Fix lint
         if: env.AUTOFIX == 'true'
@@ -109,6 +110,7 @@ jobs:
         with:
           node-version-file: .nvmrc
           cache: pnpm
+      - run: printf '%s\n' '//npm.pkg.github.com/:_authToken=${NODE_AUTH_TOKEN}' >> ~/.npmrc
       - run: pnpm install --frozen-lockfile
       - run: pnpm exec playwright install chromium --with-deps
       - run: pnpm test:e2e --update-snapshots=all
