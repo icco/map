@@ -112,7 +112,7 @@ jobs:
       - run: pnpm install --frozen-lockfile
       - run: pnpm exec playwright install chromium --with-deps
       - run: pnpm test:e2e --update-snapshots=all
-      - if: github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository
+      - if: github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository && github.actor != 'dependabot[bot]'
         uses: stefanzweifel/git-auto-commit-action@d0b01107b5db882071f96de5dd4b54961ea93f4c # v7.2.1
         with:
           commit_message: "chore: update screenshots"
@@ -126,3 +126,4 @@ jobs:
             test-results/
           if-no-files-found: ignore
           retention-days: 14
+    needs: check
