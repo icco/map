@@ -3,6 +3,17 @@ import path from "node:path"
 
 import { z } from "zod"
 
+export const whoValues = ["nat", "mel", "both"] as const
+export type Who = (typeof whoValues)[number]
+
+const visit = z.object({
+  year: z.number().int().nullable(),
+  endYear: z.number().int().optional(),
+  who: z.enum(whoValues),
+})
+
+export type Visit = z.infer<typeof visit>
+
 const feature = z.object({
   type: z.literal("Feature"),
   id: z.string().regex(/^[a-z0-9-]+$/),
@@ -10,8 +21,7 @@ const feature = z.object({
     city: z.string().min(1),
     country: z.string().min(1),
     kind: z.enum(["lived", "visited"]),
-    year: z.number().int().nullable(),
-    endYear: z.number().int().optional(),
+    visits: z.array(visit).min(1),
     photo: z.string().startsWith("/photos/"),
     photoCredit: z.string().min(1).optional(),
     photoSource: z.url().optional(),

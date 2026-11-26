@@ -26,8 +26,10 @@ Every dot is a `Point` feature in [`public/places.geojson`](public/places.geojso
     "city": "London, England",
     "country": "United Kingdom",
     "kind": "lived",
-    "year": 2014,
-    "endYear": 2015,
+    "visits": [
+      { "year": 2014, "endYear": 2015, "who": "nat" },
+      { "year": 2019, "who": "both" }
+    ],
     "photo": "/photos/london.jpg",
     "photoCredit": "Ada Lovelace, CC BY 4.0",
     "photoSource": "https://example.com/photo",
@@ -40,7 +42,7 @@ Every dot is a `Point` feature in [`public/places.geojson`](public/places.geojso
 - `id` is a unique lowercase slug.
 - `country` feeds the counts on `/stats`, so spell each country one way.
 - `kind` is `lived` or `visited`.
-- `year` is a number, or `null` when unknown. `endYear` is optional.
+- `visits` lists each stay or trip. `year` is a number, or `null` when unknown, and `endYear` is optional. `who` is `nat`, `mel`, or `both`, and drives the Everyone / Together / Nat alone / Mel alone filter.
 - `photo` is a file in `public/photos/`, about 960px wide. `photoCredit` and `photoSource` are optional.
 - `description` is plain text. Blank lines split paragraphs, and long text scrolls in the panel.
 
