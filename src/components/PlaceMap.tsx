@@ -30,8 +30,8 @@ const radius = { lived: 6, visited: 4.5 } as const
 const filters = [
   { value: "all", label: "Everyone" },
   { value: "both", label: whoLabels.both },
-  { value: "nat", label: "Nat" },
-  { value: "mel", label: "Mel" },
+  { value: "nat", label: "Nat alone" },
+  { value: "mel", label: "Mel alone" },
 ] as const satisfies { value: Who | "all"; label: string }[]
 
 const legend = [
@@ -338,7 +338,7 @@ export function PlaceMap({
 
       <div
         ref={cardRef}
-        className={`${card} absolute inset-x-3 top-3 p-3 sm:right-auto sm:w-80 sm:p-4`}
+        className={`${card} absolute inset-x-3 top-3 p-3 sm:right-auto sm:w-auto sm:min-w-80 sm:p-4`}
       >
         <h1 className="text-xl leading-tight font-medium">{title}</h1>
         <p aria-live="polite" className="mt-0.5 text-sm text-base-content/70">
@@ -361,7 +361,7 @@ export function PlaceMap({
                 setSelectedId(null)
                 setPlaceParam(null)
               }}
-              className="flex-1 cursor-pointer rounded-full px-2 py-1 text-sm font-medium text-base-content/70 transition-colors hover:text-base-content aria-pressed:bg-[var(--map-lived)] aria-pressed:text-base-100"
+              className="flex-1 cursor-pointer rounded-full px-1.5 py-1 text-xs font-medium whitespace-nowrap text-base-content/70 transition-colors hover:text-base-content aria-pressed:bg-[var(--map-lived)] aria-pressed:text-base-100 sm:text-sm"
             >
               {label}
             </button>
