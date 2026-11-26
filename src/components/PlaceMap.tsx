@@ -115,12 +115,13 @@ export function PlaceMap({
     const onWheel = (event: WheelEvent) => {
       if (event.ctrlKey || event.metaKey) return
       event.preventDefault()
-      const step =
-        (event.deltaMode ? 16 : 1) / (pxPerUnit * zoomTransform(svg).k)
+      const page = event.deltaMode === WheelEvent.DOM_DELTA_PAGE
+      const line = event.deltaMode === WheelEvent.DOM_DELTA_LINE ? 16 : 1
+      const unit = pxPerUnit * zoomTransform(svg).k
       behavior.translateBy(
         selection,
-        -event.deltaX * step,
-        -event.deltaY * step
+        (-event.deltaX * (page ? svg.clientWidth : line)) / unit,
+        (-event.deltaY * (page ? svg.clientHeight : line)) / unit
       )
     }
     svg.addEventListener("wheel", onWheel, { passive: false })
