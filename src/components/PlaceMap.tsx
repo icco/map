@@ -4,7 +4,7 @@ import { ArrowPathIcon, MinusIcon, PlusIcon } from "@heroicons/react/24/outline"
 import { select } from "d3-selection"
 import { zoom, type ZoomBehavior, zoomIdentity } from "d3-zoom"
 import {
-  type MouseEvent,
+  type MouseEvent as ReactMouseEvent,
   useCallback,
   useEffect,
   useMemo,
@@ -39,6 +39,7 @@ export function PlaceMap({
   const svgRef = useRef<SVGSVGElement>(null)
   const zoomRef = useRef<ZoomBehavior<SVGSVGElement, unknown>>(null)
   const headingRef = useRef<HTMLHeadingElement>(null)
+  const openerRef = useRef<HTMLElement | SVGElement | null>(null)
   const [transform, setTransform] = useState({ k: 1, x: 0, y: 0 })
   // Screen pixels per viewBox unit before zooming.
   const [scale, setScale] = useState(0.8)
@@ -75,6 +76,7 @@ export function PlaceMap({
     zoomRef.current = behavior
     const selection = select(svg).call(behavior)
 
+    let centered = false
     // The SVG is cropped to fill its box, so tell d3 which part is visible.
     const measure = () => {
       const box = svg.getBoundingClientRect()
@@ -89,6 +91,8 @@ export function PlaceMap({
         [left + visibleWidth, top + visibleHeight],
       ])
       setScale(next)
+      if (centered) return
+      centered = true
       behavior.translateTo(selection, ...center)
     }
     measure()
@@ -100,7 +104,21 @@ export function PlaceMap({
     }
   }, [width, height, center])
 
-  const close = useCallback(() => setSelectedId(null), [])
+  const open = (id: string) => {
+    const active = document.activeElement
+    const element =
+      active instanceof HTMLElement || active instanceof SVGElement
+        ? active
+        : null
+    // Switching places from inside the panel keeps the original opener.
+    if (element && !element.closest("[data-panel]")) openerRef.current = element
+    setSelectedId(id)
+  }
+
+  const close = useCallback(() => {
+    setSelectedId(null)
+    openerRef.current?.focus({ preventScroll: true })
+  }, [])
 
   useEffect(() => {
     if (!selectedId) return
@@ -113,9 +131,12 @@ export function PlaceMap({
   }, [selectedId, close])
 
   // Dots overlap when zoomed out, so open the one closest to the pointer.
-  const selectNearest = (event: MouseEvent<SVGGElement>, fallback: string) => {
+  const selectNearest = (
+    event: ReactMouseEvent<SVGGElement>,
+    fallback: string
+  ) => {
     const matrix = svgRef.current?.getScreenCTM()
-    if (!matrix) return setSelectedId(fallback)
+    if (!matrix) return open(fallback)
     const point = new DOMPoint(event.clientX, event.clientY).matrixTransform(
       matrix.inverse()
     )
@@ -126,7 +147,7 @@ export function PlaceMap({
         ? place
         : best
     )
-    setSelectedId(nearest.id)
+    open(nearest.id)
   }
 
   const zoomBy = (factor: number) => {
@@ -142,7 +163,7 @@ export function PlaceMap({
   }
 
   const focus = (place: MapPlace) => {
-    setSelectedId(place.id)
+    open(place.id)
     if (!svgRef.current || !zoomRef.current) return
     const selection = select(svgRef.current)
     zoomRef.current.scaleTo(selection, Math.max(transform.k, FOCUS_ZOOM))
@@ -191,7 +212,7 @@ export function PlaceMap({
                   onKeyDown={(event) => {
                     if (event.key === "Enter" || event.key === " ") {
                       event.preventDefault()
-                      setSelectedId(place.id)
+                      open(place.id)
                     }
                   }}
                 >

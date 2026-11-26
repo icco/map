@@ -20,6 +20,7 @@ export function PlacePanel({
     <aside
       aria-label={`About ${place.city}`}
       data-testid="place-panel"
+      data-panel
       className="fixed inset-x-0 bottom-0 z-40 flex max-h-[65dvh] flex-col overflow-hidden rounded-t-2xl bg-base-100 shadow-2xl md:absolute md:inset-y-0 md:right-0 md:left-auto md:max-h-none md:w-80 md:rounded-none md:border-l md:border-base-300 md:shadow-xl"
     >
       <div className="relative h-40 shrink-0 bg-base-300 md:h-36">
