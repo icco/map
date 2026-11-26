@@ -205,7 +205,10 @@ export function PlaceMap({
             type="button"
             aria-pressed={who === value}
             data-who={value}
-            onClick={() => setWho(value)}
+            onClick={() => {
+              setWho(value)
+              setSelectedId(null)
+            }}
             className={`btn btn-sm ${who === value ? "btn-neutral" : "btn-ghost"}`}
           >
             {label}

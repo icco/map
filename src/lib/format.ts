@@ -13,13 +13,10 @@ export function formatVisit(visit: Pick<Visit, "year" | "endYear">) {
   return String(visit.year)
 }
 
+// Separate visits stay separate: a long history is counted, never shown as one stay.
 export function formatYears(place: { visits: Visit[] }) {
-  const years = place.visits.flatMap((visit) =>
-    visit.year === null ? [] : [visit.year, visit.endYear ?? visit.year]
-  )
-  if (!years.length) return "Year unknown"
-  return formatVisit({
-    year: Math.min(...years),
-    endYear: Math.max(...years),
-  })
+  const labels = [...new Set(place.visits.map(formatVisit))]
+  if (labels.length <= 3) return labels.join(", ")
+  const years = place.visits.flatMap((visit) => visit.year ?? [])
+  return `${labels.length} visits since ${Math.min(...years)}`
 }
