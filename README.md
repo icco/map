@@ -1,4 +1,4 @@
-# map.natwelch.com
+# map
 
 A map of the cities Nat and Mel have lived in and visited, at <https://map.natwelch.com>.
 
@@ -66,11 +66,11 @@ The file is validated when the page renders, so `pnpm test:smoke` fails on a bad
 
 ```sh
 export NODE_AUTH_TOKEN="$(gh auth token)"
-docker build --secret id=npm_token,env=NODE_AUTH_TOKEN -t map.natwelch.com .
-docker run --rm -p 8080:8080 map.natwelch.com
+docker build --secret id=npm_token,env=NODE_AUTH_TOKEN -t map .
+docker run --rm -p 8080:8080 map
 ```
 
-CI fixes lint and formatting on pull request branches and commits the result, then lints, type checks, builds, and smoke tests. Pull requests build the image, and `main` publishes `ghcr.io/icco/map.natwelch.com:main`.
+CI fixes lint and formatting on pull request branches and commits the result, then lints, type checks, builds, and smoke tests. Pull requests build the image, and `main` publishes `ghcr.io/icco/map:main`.
 
 ## Photo credits
 
