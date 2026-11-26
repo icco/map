@@ -98,6 +98,18 @@ try {
     assert.equal(photo.status, 200, properties.photo)
     assert.match(photo.headers.get("content-type") || "", /^image\//)
   }
+  const stats = await fetch(`${base}/stats`)
+  assert.equal(stats.status, 200)
+  const statsDocument = new JSDOM(await stats.text()).window.document
+  const countries = new Set(geojson.features.map((f) => f.properties.country))
+  assert.equal(
+    statsDocument.querySelector('[data-stat="countries"]').textContent,
+    String(countries.size)
+  )
+  assert.equal(
+    statsDocument.querySelectorAll("[data-country]").length,
+    countries.size
+  )
   const world = await fetch(`${base}/world.svg`)
   assert.equal(world.status, 200)
   assert.match(world.headers.get("content-type") || "", /image\/svg\+xml/)

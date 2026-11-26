@@ -24,6 +24,7 @@ Every dot is a `Point` feature in [`public/places.geojson`](public/places.geojso
   "id": "london",
   "properties": {
     "city": "London, England",
+    "country": "United Kingdom",
     "kind": "lived",
     "year": 2014,
     "endYear": 2015,
@@ -37,6 +38,7 @@ Every dot is a `Point` feature in [`public/places.geojson`](public/places.geojso
 ```
 
 - `id` is a unique lowercase slug.
+- `country` feeds the counts on `/stats`, so spell each country one way.
 - `kind` is `lived` or `visited`.
 - `year` is a number, or `null` when unknown. `endYear` is optional.
 - `photo` is a file in `public/photos/`, about 960px wide. `photoCredit` and `photoSource` are optional.

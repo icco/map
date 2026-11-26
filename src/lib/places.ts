@@ -8,6 +8,7 @@ const feature = z.object({
   id: z.string().regex(/^[a-z0-9-]+$/),
   properties: z.object({
     city: z.string().min(1),
+    country: z.string().min(1),
     kind: z.enum(["lived", "visited"]),
     year: z.number().int().nullable(),
     endYear: z.number().int().optional(),
