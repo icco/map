@@ -11,6 +11,30 @@
 }
 
 @theme {
-  --font-sans: ui-sans-serif, system-ui, sans-serif;
-  --color-link: var(--color-primary);
+  --font-sans: "Avenir Next", Avenir, ui-sans-serif, system-ui, sans-serif;
+  --color-link: #265c83;
+}
+
+[data-theme="dark"] {
+  --color-link: #8fc1e3;
+}
+
+body {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.place-dot circle:last-child {
+  fill: var(--color-link);
+  stroke: var(--color-base-100);
+}
+
+.place-dot[data-kind="visited"] circle:last-child {
+  fill: var(--color-base-100);
+  stroke: var(--color-link);
+}
+
+.place-dot:focus-visible circle:last-child,
+.place-dot[aria-pressed="true"] circle:last-child {
+  stroke: var(--color-base-content);
 }

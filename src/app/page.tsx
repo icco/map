@@ -1,22 +1,28 @@
 import type { Metadata } from "next"
 
+import { PlaceMap } from "@/components/PlaceMap"
+import { getPlaces } from "@/lib/places"
 import { site } from "@/lib/site"
+import { HEIGHT, project, spherePath, WIDTH } from "@/lib/world"
 
 export const metadata: Metadata = { alternates: { canonical: "/" } }
 
 export default function Home() {
+  const places = getPlaces().map(({ coordinates, ...place }) => {
+    const [x, y] = project(coordinates)
+    return { ...place, x, y }
+  })
+
   return (
-    <div className="grid place-items-center px-6 py-20">
-      <div className="max-w-2xl space-y-6 text-center">
-        <p className="badge badge-outline">Made with care</p>
-        <h1 className="text-5xl font-bold tracking-tight sm:text-7xl">
-          {site.name}
-        </h1>
-        <p className="text-xl text-base-content/70">{site.description}</p>
-        <p className="text-sm text-base-content/60">
-          Something lovely is on its way.
-        </p>
-      </div>
+    <div className="mx-auto w-full max-w-[800px] px-4 py-8">
+      <h1 className="text-[32px] leading-tight font-normal">{site.name}</h1>
+      <p className="mt-2 mb-6 text-base-content/70">{site.description}</p>
+      <PlaceMap
+        places={places}
+        width={WIDTH}
+        height={HEIGHT}
+        spherePath={spherePath}
+      />
     </div>
   )
 }
