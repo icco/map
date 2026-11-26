@@ -34,7 +34,8 @@ jobs:
         run: pnpm lint:fix
       - name: Fix formatting
         if: env.AUTOFIX == 'true'
-        run: pnpm format
+        # GITHUB_TOKEN cannot push workflow changes, so pnpm check covers those.
+        run: pnpm exec prettier --write . '!.github/workflows'
       - name: Commit fixes
         if: env.AUTOFIX == 'true'
         uses: stefanzweifel/git-auto-commit-action@d0b01107b5db882071f96de5dd4b54961ea93f4c # v7.2.1

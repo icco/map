@@ -136,7 +136,8 @@ export function PlaceMap({
     fallback: string
   ) => {
     const matrix = svgRef.current?.getScreenCTM()
-    if (!matrix) return open(fallback)
+    // Assistive technology clicks carry no pointer position.
+    if (!matrix || event.detail === 0) return open(fallback)
     const point = new DOMPoint(event.clientX, event.clientY).matrixTransform(
       matrix.inverse()
     )
