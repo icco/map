@@ -1,6 +1,6 @@
 import type { Metadata } from "next"
 
-import { getPlaces } from "@/lib/places"
+import { getPlaces, type Who } from "@/lib/places"
 import { countryStats } from "@/lib/stats"
 
 export const metadata: Metadata = {
@@ -27,6 +27,15 @@ export default function Stats() {
     },
   ]
 
+  const count = (who: Who) =>
+    places.filter((place) => place.visits.some((visit) => visit.who === who))
+      .length
+  const company = [
+    { key: "both", label: "Together", value: count("both") },
+    { key: "nat", label: "Nat alone", value: count("nat") },
+    { key: "mel", label: "Mel alone", value: count("mel") },
+  ]
+
   return (
     <div className="mx-auto w-full max-w-[800px] px-4 py-8">
       <h1 className="text-[32px] leading-tight font-normal">Stats</h1>
@@ -36,7 +45,7 @@ export default function Stats() {
       </p>
 
       <dl className="grid grid-cols-2 gap-4 sm:grid-cols-4">
-        {totals.map(({ key, label, value }) => (
+        {[...totals, ...company].map(({ key, label, value }) => (
           <div
             key={key}
             className="flex flex-col-reverse rounded-box border border-base-300 bg-base-200 p-4"

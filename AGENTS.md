@@ -6,7 +6,7 @@ Next.js App Router, React, strict TypeScript, Tailwind CSS, and daisyUI.
 - Routes live in `src/app/`; reusable components belong in `src/components/` and utilities in `src/lib/`.
 - Prefer Server Components; add `"use client"` only for browser APIs or interactivity.
 - Site identity and canonical origin live in `src/lib/site.ts`.
-- Places live in `public/places.geojson`, validated by `src/lib/places.ts`. Use city coordinates only, never street addresses. Photos go in `public/photos/`.
+- Places live in `public/places.geojson`, validated by `src/lib/places.ts`. Use city coordinates only, never street addresses. Each place lists `visits` with a `who` of `nat`, `mel`, or `both`; keep other people's names out of the file. Photos go in `public/photos/`.
 - `/world.svg` is prerendered from `src/lib/world.ts`; the map uses no tiles or third-party requests.
 - Shared UI comes from `@icco/react-common` component subpaths. Configure navigation, footer features, and analytics in `src/lib/site.ts`; the root layout owns the main landmark.
 - Package installs need `NODE_AUTH_TOKEN` with GitHub Packages read access; Docker accepts it via the `npm_token` BuildKit secret.

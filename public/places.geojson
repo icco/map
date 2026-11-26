@@ -8,7 +8,12 @@
         "city": "Los Gatos, California",
         "country": "United States",
         "kind": "lived",
-        "year": null,
+        "visits": [
+          {
+            "year": null,
+            "who": "nat"
+          }
+        ],
         "photo": "/photos/los-gatos.jpg",
         "photoCredit": "Ramkumar Menon, CC BY-SA 4.0",
         "photoSource": "https://commons.wikimedia.org/wiki/File:La_Canada_Building.jpg",
@@ -26,7 +31,12 @@
         "city": "Los Altos, California",
         "country": "United States",
         "kind": "lived",
-        "year": null,
+        "visits": [
+          {
+            "year": null,
+            "who": "nat"
+          }
+        ],
         "photo": "/photos/los-altos.jpg",
         "photoCredit": "Coolcaesar, CC BY-SA 3.0",
         "photoSource": "https://commons.wikimedia.org/wiki/File:Los_Altos_entrance_sign_2a.jpg",
@@ -44,7 +54,24 @@
         "city": "Santa Rosa, California",
         "country": "United States",
         "kind": "lived",
-        "year": 2005,
+        "visits": [
+          {
+            "year": 2005,
+            "who": "nat"
+          },
+          {
+            "year": 2022,
+            "who": "both"
+          },
+          {
+            "year": 2023,
+            "who": "nat"
+          },
+          {
+            "year": 2025,
+            "who": "both"
+          }
+        ],
         "photo": "/photos/santa-rosa.jpg",
         "photoCredit": "Wulfnoth, CC BY 3.0",
         "photoSource": "https://commons.wikimedia.org/wiki/File:Old_Santa_Rosa_Post_Office,_Downtown_Santa_Rosa,2.jpg",
@@ -62,8 +89,13 @@
         "city": "Huntington Lake, California",
         "country": "United States",
         "kind": "visited",
-        "year": 2002,
-        "endYear": 2006,
+        "visits": [
+          {
+            "year": 2002,
+            "endYear": 2006,
+            "who": "nat"
+          }
+        ],
         "photo": "/photos/huntington-lake.jpg",
         "photoCredit": "USFS Region 5, Public domain",
         "photoSource": "https://commons.wikimedia.org/wiki/File:Huntington_Lake_(3717098437).jpg",
@@ -81,8 +113,13 @@
         "city": "San Luis Obispo, California",
         "country": "United States",
         "kind": "lived",
-        "year": 2006,
-        "endYear": 2011,
+        "visits": [
+          {
+            "year": 2006,
+            "endYear": 2011,
+            "who": "nat"
+          }
+        ],
         "photo": "/photos/san-luis-obispo.jpg",
         "photoCredit": "Rennett Stowe, CC BY 2.0",
         "photoSource": "https://commons.wikimedia.org/wiki/File:Mission_San_Luis_Obispo_(cropped).jpg",
@@ -100,7 +137,16 @@
         "city": "Mountain View, California",
         "country": "United States",
         "kind": "visited",
-        "year": 2011,
+        "visits": [
+          {
+            "year": 2011,
+            "who": "nat"
+          },
+          {
+            "year": 2014,
+            "who": "nat"
+          }
+        ],
         "photo": "/photos/mountain-view.jpg",
         "photoCredit": "Dicklyon, CC BY-SA 4.0",
         "photoSource": "https://commons.wikimedia.org/wiki/File:Moffett_Field.jpg",
@@ -118,8 +164,53 @@
         "city": "San Francisco, California",
         "country": "United States",
         "kind": "lived",
-        "year": 2011,
-        "endYear": 2014,
+        "visits": [
+          {
+            "year": 2011,
+            "endYear": 2014,
+            "who": "nat"
+          },
+          {
+            "year": 2017,
+            "who": "nat"
+          },
+          {
+            "year": 2017,
+            "who": "both"
+          },
+          {
+            "year": 2018,
+            "who": "both"
+          },
+          {
+            "year": 2019,
+            "who": "nat"
+          },
+          {
+            "year": 2022,
+            "who": "nat"
+          },
+          {
+            "year": 2023,
+            "who": "nat"
+          },
+          {
+            "year": 2024,
+            "who": "nat"
+          },
+          {
+            "year": 2025,
+            "who": "nat"
+          },
+          {
+            "year": 2026,
+            "who": "nat"
+          },
+          {
+            "year": 2026,
+            "who": "both"
+          }
+        ],
         "photo": "/photos/san-francisco.jpg",
         "photoCredit": "Craig Howell, CC BY 2.0",
         "photoSource": "https://commons.wikimedia.org/wiki/File:Zeppelin-ride-020100925-195_(5029394846).jpg",
@@ -137,7 +228,44 @@
         "city": "Seattle, Washington",
         "country": "United States",
         "kind": "lived",
-        "year": null,
+        "visits": [
+          {
+            "year": null,
+            "who": "nat"
+          },
+          {
+            "year": 2012,
+            "who": "nat"
+          },
+          {
+            "year": 2013,
+            "who": "nat"
+          },
+          {
+            "year": 2014,
+            "who": "nat"
+          },
+          {
+            "year": 2015,
+            "who": "nat"
+          },
+          {
+            "year": 2018,
+            "who": "both"
+          },
+          {
+            "year": 2019,
+            "who": "nat"
+          },
+          {
+            "year": 2022,
+            "who": "both"
+          },
+          {
+            "year": 2023,
+            "who": "both"
+          }
+        ],
         "photo": "/photos/seattle.jpg",
         "photoCredit": "Jeffery Hayes, CC BY-SA 3.0",
         "photoSource": "https://commons.wikimedia.org/wiki/File:Seattle_Center_as_night_falls.jpg",
@@ -155,8 +283,34 @@
         "city": "London, England",
         "country": "United Kingdom",
         "kind": "lived",
-        "year": 2014,
-        "endYear": 2015,
+        "visits": [
+          {
+            "year": 2013,
+            "who": "nat"
+          },
+          {
+            "year": 2014,
+            "endYear": 2015,
+            "who": "nat"
+          },
+          {
+            "year": 2019,
+            "who": "both"
+          },
+          {
+            "year": 2024,
+            "endYear": 2025,
+            "who": "mel"
+          },
+          {
+            "year": 2024,
+            "who": "both"
+          },
+          {
+            "year": 2025,
+            "who": "both"
+          }
+        ],
         "photo": "/photos/london.jpg",
         "photoCredit": "Ilya Grigorik, CC BY-SA 3.0",
         "photoSource": "https://commons.wikimedia.org/wiki/File:London_Skyline_(125508655).jpeg",
@@ -174,7 +328,32 @@
         "city": "New York, New York",
         "country": "United States",
         "kind": "lived",
-        "year": 2015,
+        "visits": [
+          {
+            "year": 2010,
+            "who": "nat"
+          },
+          {
+            "year": 2012,
+            "who": "nat"
+          },
+          {
+            "year": 2015,
+            "who": "nat"
+          },
+          {
+            "year": 2017,
+            "who": "both"
+          },
+          {
+            "year": 2026,
+            "who": "nat"
+          },
+          {
+            "year": 2026,
+            "who": "both"
+          }
+        ],
         "photo": "/photos/new-york.jpg",
         "photoCredit": "Dllu, CC BY-SA 4.0",
         "photoSource": "https://commons.wikimedia.org/wiki/File:View_of_Empire_State_Building_from_Rockefeller_Center_New_York_City_dllu_(cropped).jpg",
@@ -192,7 +371,16 @@
         "city": "Montreal, Quebec",
         "country": "Canada",
         "kind": "visited",
-        "year": 2016,
+        "visits": [
+          {
+            "year": 2016,
+            "who": "both"
+          },
+          {
+            "year": 2019,
+            "who": "nat"
+          }
+        ],
         "photo": "/photos/montreal.jpg",
         "photoCredit": "Quintin Soloviev, CC BY 4.0",
         "photoSource": "https://commons.wikimedia.org/wiki/File:Montreal,_Quebec_skyline.jpg",
@@ -210,7 +398,32 @@
         "city": "Lake Almanor, California",
         "country": "United States",
         "kind": "visited",
-        "year": 2017,
+        "visits": [
+          {
+            "year": 2013,
+            "who": "nat"
+          },
+          {
+            "year": 2017,
+            "who": "both"
+          },
+          {
+            "year": 2018,
+            "who": "both"
+          },
+          {
+            "year": 2019,
+            "who": "both"
+          },
+          {
+            "year": 2022,
+            "who": "both"
+          },
+          {
+            "year": 2023,
+            "who": "both"
+          }
+        ],
         "photo": "/photos/lake-almanor.jpg",
         "photoCredit": "Kmmontandon, Public domain",
         "photoSource": "https://commons.wikimedia.org/wiki/File:LakeAlmanor2.jpg",
@@ -228,7 +441,12 @@
         "city": "Beacon, New York",
         "country": "United States",
         "kind": "lived",
-        "year": null,
+        "visits": [
+          {
+            "year": null,
+            "who": "both"
+          }
+        ],
         "photo": "/photos/beacon.jpg",
         "photoCredit": "Mahopa, CC BY-SA 3.0",
         "photoSource": "https://commons.wikimedia.org/wiki/File:Beaconpic.jpg",
@@ -246,7 +464,12 @@
         "city": "Cambridge, England",
         "country": "United Kingdom",
         "kind": "lived",
-        "year": 2026,
+        "visits": [
+          {
+            "year": 2026,
+            "who": "both"
+          }
+        ],
         "photo": "/photos/cambridge.jpg",
         "photoCredit": "Jean-Christophe BENOIST, CC BY-SA 4.0",
         "photoSource": "https://commons.wikimedia.org/wiki/File:Cambridge_-_Kings_College_vue_des_backs.jpg",
@@ -255,6 +478,1255 @@
       "geometry": {
         "type": "Point",
         "coordinates": [0.12, 52.21]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "washington-dc",
+      "properties": {
+        "city": "Washington, DC",
+        "country": "United States",
+        "kind": "visited",
+        "visits": [
+          {
+            "year": 2010,
+            "who": "nat"
+          },
+          {
+            "year": 2016,
+            "who": "nat"
+          },
+          {
+            "year": 2017,
+            "who": "both"
+          },
+          {
+            "year": 2019,
+            "who": "nat"
+          },
+          {
+            "year": 2024,
+            "who": "both"
+          },
+          {
+            "year": 2026,
+            "who": "both"
+          }
+        ],
+        "photo": "/photos/washington-dc.jpg",
+        "photoCredit": "Ralf Roletschek, CC BY-SA 3.0",
+        "photoSource": "https://commons.wikimedia.org/wiki/File:12-07-13-washington-by-RalfR-08.jpg",
+        "description": "Nat and Mel visited together in 2017, 2024 and 2026. Nat visited in 2010, 2016 and 2019."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-77.04, 38.91]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reno",
+      "properties": {
+        "city": "Reno, Nevada",
+        "country": "United States",
+        "kind": "visited",
+        "visits": [
+          {
+            "year": 2012,
+            "who": "nat"
+          }
+        ],
+        "photo": "/photos/reno.jpg",
+        "photoCredit": "Trevor Bexon, CC BY 2.0",
+        "photoSource": "https://commons.wikimedia.org/wiki/File:Reno,_Nevada_(16931715632).jpg",
+        "description": "Nat visited in 2012."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-119.81, 39.53]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "black-rock-city",
+      "properties": {
+        "city": "Black Rock City, Nevada",
+        "country": "United States",
+        "kind": "visited",
+        "visits": [
+          {
+            "year": 2012,
+            "who": "nat"
+          }
+        ],
+        "photo": "/photos/black-rock-city.jpg",
+        "photoCredit": "RawWriter, CC BY-SA 4.0",
+        "photoSource": "https://commons.wikimedia.org/wiki/File:Temple_du_Burning_Man_2016.jpg",
+        "description": "Nat visited in 2012."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-119.21, 40.79]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "cape-canaveral",
+      "properties": {
+        "city": "Cape Canaveral, Florida",
+        "country": "United States",
+        "kind": "visited",
+        "visits": [
+          {
+            "year": 2013,
+            "who": "nat"
+          }
+        ],
+        "photo": "/photos/cape-canaveral.jpg",
+        "photoCredit": "Kim Shiflett, Public domain",
+        "photoSource": "https://commons.wikimedia.org/wiki/File:VAB_and_SLS.jpg",
+        "description": "Nat visited in 2013."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-80.61, 28.39]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "chicago",
+      "properties": {
+        "city": "Chicago, Illinois",
+        "country": "United States",
+        "kind": "visited",
+        "visits": [
+          {
+            "year": 2013,
+            "who": "nat"
+          },
+          {
+            "year": 2023,
+            "who": "nat"
+          }
+        ],
+        "photo": "/photos/chicago.jpg",
+        "photoCredit": "John Picken, CC BY 2.0",
+        "photoSource": "https://commons.wikimedia.org/wiki/File:Chicago_River_ferry_b.jpg",
+        "description": "Nat visited in 2013 and 2023."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-87.63, 41.88]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "milan",
+      "properties": {
+        "city": "Milan, Italy",
+        "country": "Italy",
+        "kind": "visited",
+        "visits": [
+          {
+            "year": 2014,
+            "who": "nat"
+          }
+        ],
+        "photo": "/photos/milan.jpg",
+        "photoCredit": "Jiuguang Wang, CC BY-SA 3.0",
+        "photoSource": "https://commons.wikimedia.org/wiki/File:Milan_Cathedral_from_Piazza_del_Duomo.jpg",
+        "description": "Nat visited in 2014."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [9.19, 45.46]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "amsterdam",
+      "properties": {
+        "city": "Amsterdam, Netherlands",
+        "country": "Netherlands",
+        "kind": "visited",
+        "visits": [
+          {
+            "year": 2014,
+            "who": "nat"
+          }
+        ],
+        "photo": "/photos/amsterdam.jpg",
+        "photoCredit": "Deerpeter, CC BY-SA 4.0",
+        "photoSource": "https://commons.wikimedia.org/wiki/File:Dam_Square_2026.jpg",
+        "description": "Nat visited in 2014."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [4.9, 52.37]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "atlanta",
+      "properties": {
+        "city": "Atlanta, Georgia",
+        "country": "United States",
+        "kind": "visited",
+        "visits": [
+          {
+            "year": 2014,
+            "who": "nat"
+          },
+          {
+            "year": 2019,
+            "who": "nat"
+          },
+          {
+            "year": 2020,
+            "who": "nat"
+          }
+        ],
+        "photo": "/photos/atlanta.jpg",
+        "photoCredit": "AtlChampion, CC BY-SA 4.0",
+        "photoSource": "https://commons.wikimedia.org/wiki/File:A2ATL20250614-0721_(cropped).jpg",
+        "description": "Nat visited in 2014, 2019 and 2020."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-84.39, 33.75]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "tokyo",
+      "properties": {
+        "city": "Tokyo, Japan",
+        "country": "Japan",
+        "kind": "visited",
+        "visits": [
+          {
+            "year": 2014,
+            "who": "nat"
+          },
+          {
+            "year": 2019,
+            "who": "both"
+          }
+        ],
+        "photo": "/photos/tokyo.jpg",
+        "photoCredit": "Morio, CC BY-SA 3.0",
+        "photoSource": "https://commons.wikimedia.org/wiki/File:Skyscrapers_of_Shinjuku_2009_January.jpg",
+        "description": "Nat and Mel visited together in 2019. Nat visited in 2014."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [139.69, 35.69]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "kailua-kona",
+      "properties": {
+        "city": "Kailua-Kona, Hawaii",
+        "country": "United States",
+        "kind": "visited",
+        "visits": [
+          {
+            "year": 2014,
+            "who": "nat"
+          }
+        ],
+        "photo": "/photos/kailua-kona.jpg",
+        "photoCredit": "Travisthurston, CC BY-SA 3.0",
+        "photoSource": "https://commons.wikimedia.org/wiki/File:Kona_Mauka.jpg",
+        "description": "Nat visited in 2014."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-155.99, 19.64]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "dusseldorf",
+      "properties": {
+        "city": "Düsseldorf, Germany",
+        "country": "Germany",
+        "kind": "visited",
+        "visits": [
+          {
+            "year": 2014,
+            "who": "nat"
+          }
+        ],
+        "photo": "/photos/dusseldorf.jpg",
+        "photoCredit": "Dirk Eubel, CC BY-SA 2.0",
+        "photoSource": "https://commons.wikimedia.org/wiki/File:Rheinkniebr%C3%BCcke_at_night.jpg",
+        "description": "Nat visited in 2014."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [6.78, 51.23]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "kirkland",
+      "properties": {
+        "city": "Kirkland, Washington",
+        "country": "United States",
+        "kind": "visited",
+        "visits": [
+          {
+            "year": 2014,
+            "who": "nat"
+          }
+        ],
+        "photo": "/photos/kirkland.jpg",
+        "photoCredit": "Jelson25, CC BY-SA 3.0",
+        "photoSource": "https://commons.wikimedia.org/wiki/File:Aerial_Kirkland_Washington_November_2011.JPG",
+        "description": "Nat visited in 2014."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-122.21, 47.68]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "los-angeles",
+      "properties": {
+        "city": "Los Angeles, California",
+        "country": "United States",
+        "kind": "visited",
+        "visits": [
+          {
+            "year": 2014,
+            "who": "nat"
+          },
+          {
+            "year": 2021,
+            "who": "nat"
+          },
+          {
+            "year": 2023,
+            "who": "nat"
+          }
+        ],
+        "photo": "/photos/los-angeles.jpg",
+        "photoCredit": "Gnaphron, CC BY-SA 2.0",
+        "photoSource": "https://commons.wikimedia.org/wiki/File:Hollywood_sign_(8485145044).jpg",
+        "description": "Nat visited in 2014, 2021 and 2023."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-118.24, 34.05]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "zurich",
+      "properties": {
+        "city": "Zurich, Switzerland",
+        "country": "Switzerland",
+        "kind": "visited",
+        "visits": [
+          {
+            "year": 2015,
+            "who": "nat"
+          }
+        ],
+        "photo": "/photos/zurich.jpg",
+        "photoCredit": "Thomas Wolf, CC BY-SA 3.0 de",
+        "photoSource": "https://commons.wikimedia.org/wiki/File:Altstadt_Z%C3%BCrich_2015.jpg",
+        "description": "Nat visited in 2015."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [8.54, 47.38]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "copenhagen",
+      "properties": {
+        "city": "Copenhagen, Denmark",
+        "country": "Denmark",
+        "kind": "visited",
+        "visits": [
+          {
+            "year": 2015,
+            "who": "nat"
+          }
+        ],
+        "photo": "/photos/copenhagen.jpg",
+        "photoCredit": "Moahim, CC BY-SA 4.0",
+        "photoSource": "https://commons.wikimedia.org/wiki/File:2018_-_Christiansborg_from_the_Marble_Bridge.jpg",
+        "description": "Nat visited in 2015."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [12.57, 55.68]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "boston",
+      "properties": {
+        "city": "Boston, Massachusetts",
+        "country": "United States",
+        "kind": "visited",
+        "visits": [
+          {
+            "year": 2017,
+            "who": "both"
+          }
+        ],
+        "photo": "/photos/boston.jpg",
+        "photoCredit": "Ajay Suresh, CC BY 2.0",
+        "photoSource": "https://commons.wikimedia.org/wiki/File:Boston_-Massachusetts_State_House_(48718911666).jpg",
+        "description": "Nat and Mel visited together in 2017."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.06, 42.36]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "st-louis",
+      "properties": {
+        "city": "St. Louis, Missouri",
+        "country": "United States",
+        "kind": "visited",
+        "visits": [
+          {
+            "year": 2017,
+            "who": "nat"
+          },
+          {
+            "year": 2023,
+            "who": "nat"
+          }
+        ],
+        "photo": "/photos/st-louis.jpg",
+        "photoCredit": "Sam valadi, CC BY 2.0",
+        "photoSource": "https://commons.wikimedia.org/wiki/File:Gateway_Arch_-_St._Louis_-_Missouri_(17275578342).jpg",
+        "description": "Nat visited in 2017 and 2023."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-90.2, 38.63]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "portland-or",
+      "properties": {
+        "city": "Portland, Oregon",
+        "country": "United States",
+        "kind": "visited",
+        "visits": [
+          {
+            "year": 2017,
+            "who": "both"
+          },
+          {
+            "year": 2018,
+            "who": "both"
+          },
+          {
+            "year": 2022,
+            "who": "nat"
+          },
+          {
+            "year": 2022,
+            "who": "both"
+          },
+          {
+            "year": 2023,
+            "who": "both"
+          }
+        ],
+        "photo": "/photos/portland-or.jpg",
+        "photoCredit": "Spicypepper999, CC0",
+        "photoSource": "https://commons.wikimedia.org/wiki/File:Portland_Oregon_Aerial,_June_2025.jpg",
+        "description": "Nat and Mel visited together in 2017, 2018, 2022 and 2023. Nat visited in 2022."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-122.68, 45.52]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "south-lake-tahoe",
+      "properties": {
+        "city": "South Lake Tahoe, California",
+        "country": "United States",
+        "kind": "visited",
+        "visits": [
+          {
+            "year": 2018,
+            "who": "nat"
+          }
+        ],
+        "photo": "/photos/south-lake-tahoe.jpg",
+        "photoCredit": "Mark Miller, CC BY-SA 3.0",
+        "photoSource": "https://commons.wikimedia.org/wiki/File:South_Lake_Tahoe_Skyline.JPG",
+        "description": "Nat visited in 2018."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-119.98, 38.94]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "fargo",
+      "properties": {
+        "city": "Fargo, North Dakota",
+        "country": "United States",
+        "kind": "visited",
+        "visits": [
+          {
+            "year": 2018,
+            "who": "both"
+          }
+        ],
+        "photo": "/photos/fargo.jpg",
+        "photoCredit": "formulanone, CC BY-SA 2.0",
+        "photoSource": "https://commons.wikimedia.org/wiki/File:Downtown_Fargo_Aerial_-_Facing_Southeast_(51009704407).jpg",
+        "description": "Nat and Mel visited together in 2018."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-96.79, 46.88]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "paris",
+      "properties": {
+        "city": "Paris, France",
+        "country": "France",
+        "kind": "visited",
+        "visits": [
+          {
+            "year": 2018,
+            "who": "both"
+          }
+        ],
+        "photo": "/photos/paris.jpg",
+        "photoCredit": "Yann Caradec, CC BY-SA 2.0",
+        "photoSource": "https://commons.wikimedia.org/wiki/File:La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques,_Paris_ao%C3%BBt_2014_(2).jpg",
+        "description": "Nat and Mel visited together in 2018."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [2.35, 48.86]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "pittsburgh",
+      "properties": {
+        "city": "Pittsburgh, Pennsylvania",
+        "country": "United States",
+        "kind": "visited",
+        "visits": [
+          {
+            "year": 2019,
+            "who": "nat"
+          }
+        ],
+        "photo": "/photos/pittsburgh.jpg",
+        "photoCredit": "Dllu, CC BY-SA 4.0",
+        "photoSource": "https://commons.wikimedia.org/wiki/File:Ascending_the_Duquesne_Incline.jpg",
+        "description": "Nat visited in 2019."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-79.99, 40.44]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "dublin-oh",
+      "properties": {
+        "city": "Dublin, Ohio",
+        "country": "United States",
+        "kind": "visited",
+        "visits": [
+          {
+            "year": 2019,
+            "who": "nat"
+          }
+        ],
+        "photo": "/photos/dublin-oh.jpg",
+        "photoCredit": "Nheyob, CC BY-SA 4.0",
+        "photoSource": "https://commons.wikimedia.org/wiki/File:Dublin_City_Hall_(Dublin,_Ohio)_-_new_city_hall_effective_April_15,_2020.jpg",
+        "description": "Nat visited in 2019."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-83.11, 40.1]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "mexico-city",
+      "properties": {
+        "city": "Mexico City, Mexico",
+        "country": "Mexico",
+        "kind": "visited",
+        "visits": [
+          {
+            "year": 2019,
+            "who": "both"
+          }
+        ],
+        "photo": "/photos/mexico-city.jpg",
+        "photoCredit": "Gobierno CDMX, CC0",
+        "photoSource": "https://commons.wikimedia.org/wiki/File:Sobrevuelos_CDMX_HJ2A4913_(25514321687)_(cropped).jpg",
+        "description": "Nat and Mel visited together in 2019."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-99.13, 19.43]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sonoma",
+      "properties": {
+        "city": "Sonoma, California",
+        "country": "United States",
+        "kind": "visited",
+        "visits": [
+          {
+            "year": 2019,
+            "who": "both"
+          }
+        ],
+        "photo": "/photos/sonoma.jpg",
+        "photoCredit": "Cullen328, CC BY-SA 3.0",
+        "photoSource": "https://commons.wikimedia.org/wiki/File:Sonoma_City_Hall_(cropped).jpg",
+        "description": "Nat and Mel visited together in 2019."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-122.46, 38.29]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "wading-river",
+      "properties": {
+        "city": "Wading River, New York",
+        "country": "United States",
+        "kind": "visited",
+        "visits": [
+          {
+            "year": 2019,
+            "who": "both"
+          }
+        ],
+        "photo": "/photos/wading-river.jpg",
+        "photoCredit": "DanTD, CC BY-SA 4.0",
+        "photoSource": "https://commons.wikimedia.org/wiki/File:Wildwood_State_Park_from_North_Wading_River_Road.jpg",
+        "description": "Nat and Mel visited together in 2019."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-72.84, 40.95]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "denver",
+      "properties": {
+        "city": "Denver, Colorado",
+        "country": "United States",
+        "kind": "visited",
+        "visits": [
+          {
+            "year": 2019,
+            "who": "both"
+          }
+        ],
+        "photo": "/photos/denver.jpg",
+        "photoCredit": "Quintin Soloviev, CC BY 4.0",
+        "photoSource": "https://commons.wikimedia.org/wiki/File:Denver,_Colorado_skyline_(cropped_3x5).jpg",
+        "description": "Nat and Mel visited together in 2019."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-104.99, 39.74]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "fishkill",
+      "properties": {
+        "city": "Fishkill, New York",
+        "country": "United States",
+        "kind": "visited",
+        "visits": [
+          {
+            "year": 2019,
+            "who": "both"
+          }
+        ],
+        "photo": "/photos/fishkill.jpg",
+        "photoCredit": "Rolf Müller, CC BY-SA 3.0",
+        "photoSource": "https://commons.wikimedia.org/wiki/File:Village_of_fishkill_entrance_2006.jpg",
+        "description": "Nat and Mel visited together in 2019."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.9, 41.54]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "dallas",
+      "properties": {
+        "city": "Dallas, Texas",
+        "country": "United States",
+        "kind": "visited",
+        "visits": [
+          {
+            "year": 2019,
+            "who": "both"
+          }
+        ],
+        "photo": "/photos/dallas.jpg",
+        "photoCredit": "Robert Hensley, CC BY 2.0",
+        "photoSource": "https://commons.wikimedia.org/wiki/File:Dallas_view.jpg",
+        "description": "Nat and Mel visited together in 2019."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-96.8, 32.78]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aubrey",
+      "properties": {
+        "city": "Aubrey, Texas",
+        "country": "United States",
+        "kind": "visited",
+        "visits": [
+          {
+            "year": 2019,
+            "who": "both"
+          }
+        ],
+        "photo": "/photos/aubrey.jpg",
+        "photoCredit": "Renelibrary, CC BY-SA 4.0",
+        "photoSource": "https://commons.wikimedia.org/wiki/File:Downtown_Aubrey_Texas_Wiki_(1_of_1).jpg",
+        "description": "Nat and Mel visited together in 2019."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-96.99, 33.3]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "austin",
+      "properties": {
+        "city": "Austin, Texas",
+        "country": "United States",
+        "kind": "visited",
+        "visits": [
+          {
+            "year": 2019,
+            "who": "nat"
+          },
+          {
+            "year": 2023,
+            "who": "nat"
+          }
+        ],
+        "photo": "/photos/austin.jpg",
+        "photoCredit": "Quintin Soloviev, CC BY 4.0",
+        "photoSource": "https://commons.wikimedia.org/wiki/File:Skyline_of_Austin,_Texas_(cropped).jpg",
+        "description": "Nat visited in 2019 and 2023."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-97.74, 30.27]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "weehawken",
+      "properties": {
+        "city": "Weehawken, New Jersey",
+        "country": "United States",
+        "kind": "visited",
+        "visits": [
+          {
+            "year": 2019,
+            "who": "both"
+          }
+        ],
+        "photo": "/photos/weehawken.jpg",
+        "photoCredit": "Josiah Lau, CC BY 2.0",
+        "photoSource": "https://commons.wikimedia.org/wiki/File:Inside_Lincoln_Tunnel_NY_NJ.jpg",
+        "description": "Nat and Mel visited together in 2019."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-74.02, 40.77]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "portland-me",
+      "properties": {
+        "city": "Portland, Maine",
+        "country": "United States",
+        "kind": "visited",
+        "visits": [
+          {
+            "year": 2019,
+            "who": "both"
+          }
+        ],
+        "photo": "/photos/portland-me.jpg",
+        "photoCredit": "PhilipC, CC BY 2.0",
+        "photoSource": "https://commons.wikimedia.org/wiki/File:TheOldPort.jpg",
+        "description": "Nat and Mel visited together in 2019."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-70.26, 43.66]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "costa-rica",
+      "properties": {
+        "city": "Costa Rica",
+        "country": "Costa Rica",
+        "kind": "visited",
+        "visits": [
+          {
+            "year": 2020,
+            "who": "both"
+          }
+        ],
+        "photo": "/photos/costa-rica.jpg",
+        "photoCredit": "Bogdan Migulski, CC BY 2.0",
+        "photoSource": "https://commons.wikimedia.org/wiki/File:La_Sabana-Costa_Rica_2.JPG",
+        "description": "Nat and Mel visited together in 2020."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-84.09, 9.93]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "st-croix",
+      "properties": {
+        "city": "St. Croix, US Virgin Islands",
+        "country": "United States",
+        "kind": "visited",
+        "visits": [
+          {
+            "year": 2021,
+            "who": "both"
+          }
+        ],
+        "photo": "/photos/st-croix.jpg",
+        "photoCredit": "Megatron19, CC BY-SA 3.0",
+        "photoSource": "https://commons.wikimedia.org/wiki/File:Christiansted-1-.jpg",
+        "description": "Nat and Mel visited together in 2021."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-64.75, 17.73]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "monterey",
+      "properties": {
+        "city": "Monterey, California",
+        "country": "United States",
+        "kind": "visited",
+        "visits": [
+          {
+            "year": 2022,
+            "who": "nat"
+          }
+        ],
+        "photo": "/photos/monterey.jpg",
+        "photoCredit": "Catalinaschool, CC BY 4.0",
+        "photoSource": "https://commons.wikimedia.org/wiki/File:Santa_Catalina_School,_Monterey,_CA_(cropped).jpg",
+        "description": "Nat visited in 2022."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-121.89, 36.6]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "san-diego",
+      "properties": {
+        "city": "San Diego, California",
+        "country": "United States",
+        "kind": "visited",
+        "visits": [
+          {
+            "year": 2022,
+            "who": "nat"
+          }
+        ],
+        "photo": "/photos/san-diego.jpg",
+        "photoCredit": "Dirk Hansen, CC BY-SA 3.0",
+        "photoSource": "https://commons.wikimedia.org/wiki/File:La_Jolla_Shores_view_(cropped).jpg",
+        "description": "Nat visited in 2022."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-117.16, 32.72]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "cairo",
+      "properties": {
+        "city": "Cairo, Egypt",
+        "country": "Egypt",
+        "kind": "visited",
+        "visits": [
+          {
+            "year": 2022,
+            "who": "both"
+          }
+        ],
+        "photo": "/photos/cairo.jpg",
+        "photoCredit": "Wael El Sisi, CC BY-SA 3.0",
+        "photoSource": "https://commons.wikimedia.org/wiki/File:Cairo_From_Tower_(cropped).jpg",
+        "description": "Nat and Mel visited together in 2022."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [31.24, 30.04]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "delhi-ny",
+      "properties": {
+        "city": "Delhi, New York",
+        "country": "United States",
+        "kind": "visited",
+        "visits": [
+          {
+            "year": 2022,
+            "who": "nat"
+          }
+        ],
+        "photo": "/photos/delhi-ny.jpg",
+        "photoCredit": "L. R. Burleigh, Public domain",
+        "photoSource": "https://commons.wikimedia.org/wiki/File:Delhi,_N.Y._1887._LOC_75694763.jpg",
+        "description": "Nat visited in 2022."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-74.92, 42.28]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "miami",
+      "properties": {
+        "city": "Miami, Florida",
+        "country": "United States",
+        "kind": "visited",
+        "visits": [
+          {
+            "year": 2023,
+            "who": "both"
+          }
+        ],
+        "photo": "/photos/miami.jpg",
+        "photoCredit": "Wilfredor, CC0",
+        "photoSource": "https://commons.wikimedia.org/wiki/File:Miami,_Florida,_Skyline_4.jpg",
+        "description": "Nat and Mel visited together in 2023."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-80.19, 25.76]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "bermuda",
+      "properties": {
+        "city": "Bermuda",
+        "country": "United Kingdom",
+        "kind": "visited",
+        "visits": [
+          {
+            "year": 2023,
+            "who": "both"
+          }
+        ],
+        "photo": "/photos/bermuda.jpg",
+        "photoCredit": "R Danny A, CC BY-SA 4.0",
+        "photoSource": "https://commons.wikimedia.org/wiki/File:City_of_Hamilton,_from_North_Warwick_Parish,_Bermuda.jpg",
+        "description": "Nat and Mel visited together in 2023."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-64.78, 32.29]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "phoenix",
+      "properties": {
+        "city": "Phoenix, Arizona",
+        "country": "United States",
+        "kind": "visited",
+        "visits": [
+          {
+            "year": 2024,
+            "who": "nat"
+          }
+        ],
+        "photo": "/photos/phoenix.jpg",
+        "photoCredit": "DPPed, CC BY-SA 3.0",
+        "photoSource": "https://commons.wikimedia.org/wiki/File:Downtown_Phoenix_Aerial_Looking_Northeast.jpg",
+        "description": "Nat visited in 2024."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-112.07, 33.45]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "nassau",
+      "properties": {
+        "city": "Nassau, Bahamas",
+        "country": "Bahamas",
+        "kind": "visited",
+        "visits": [
+          {
+            "year": 2024,
+            "who": "both"
+          },
+          {
+            "year": 2025,
+            "who": "both"
+          },
+          {
+            "year": 2026,
+            "who": "both"
+          }
+        ],
+        "photo": "/photos/nassau.jpg",
+        "photoCredit": "Quintin Soloviev, CC BY 4.0",
+        "photoSource": "https://commons.wikimedia.org/wiki/File:Nassau,_Bahamas_aerial_view_(cropped).jpg",
+        "description": "Nat and Mel visited together in 2024, 2025 and 2026."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-77.34, 25.05]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "palm-springs",
+      "properties": {
+        "city": "Palm Springs, California",
+        "country": "United States",
+        "kind": "visited",
+        "visits": [
+          {
+            "year": 2024,
+            "who": "nat"
+          }
+        ],
+        "photo": "/photos/palm-springs.jpg",
+        "photoCredit": "Visitor7, CC BY-SA 3.0",
+        "photoSource": "https://commons.wikimedia.org/wiki/File:Palm_Springs_from_the_Museum_Trail.jpg",
+        "description": "Nat visited in 2024."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-116.55, 33.83]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "san-antonio",
+      "properties": {
+        "city": "San Antonio, Texas",
+        "country": "United States",
+        "kind": "visited",
+        "visits": [
+          {
+            "year": 2025,
+            "who": "nat"
+          }
+        ],
+        "photo": "/photos/san-antonio.jpg",
+        "photoCredit": "Jouaienttoi, CC BY-SA 4.0",
+        "photoSource": "https://commons.wikimedia.org/wiki/File:San_Antonio_Botanical_Garden_Overlook_View.jpg",
+        "description": "Nat visited in 2025."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-98.49, 29.42]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "vail",
+      "properties": {
+        "city": "Vail, Colorado",
+        "country": "United States",
+        "kind": "visited",
+        "visits": [
+          {
+            "year": 2025,
+            "who": "nat"
+          }
+        ],
+        "photo": "/photos/vail.jpg",
+        "photoCredit": "G0phy, CC0",
+        "photoSource": "https://commons.wikimedia.org/wiki/File:Buildings_in_Vail,_Colorado_1.jpg",
+        "description": "Nat visited in 2025."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-106.37, 39.64]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "fort-lauderdale",
+      "properties": {
+        "city": "Fort Lauderdale, Florida",
+        "country": "United States",
+        "kind": "visited",
+        "visits": [
+          {
+            "year": 2026,
+            "who": "both"
+          }
+        ],
+        "photo": "/photos/fort-lauderdale.jpg",
+        "photoCredit": "KeanoManu, CC BY-SA 4.0",
+        "photoSource": "https://commons.wikimedia.org/wiki/File:Skyline_of_Fort_Lauderdale,_Nov-15.jpg",
+        "description": "Nat and Mel visited together in 2026."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-80.14, 26.12]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "palm-coast",
+      "properties": {
+        "city": "Palm Coast, Florida",
+        "country": "United States",
+        "kind": "visited",
+        "visits": [
+          {
+            "year": 2026,
+            "who": "both"
+          }
+        ],
+        "photo": "/photos/palm-coast.jpg",
+        "photoCredit": "Andyrkellergmail, CC BY-SA 4.0",
+        "photoSource": "https://commons.wikimedia.org/wiki/File:Palm_Coast_Sunset.jpg",
+        "description": "Nat and Mel visited together in 2026."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-81.21, 29.58]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "patton",
+      "properties": {
+        "city": "Patton, Pennsylvania",
+        "country": "United States",
+        "kind": "visited",
+        "visits": [
+          {
+            "year": 2026,
+            "who": "nat"
+          }
+        ],
+        "photo": "/photos/patton.jpg",
+        "photoCredit": "Nyttend, Public domain",
+        "photoSource": "https://commons.wikimedia.org/wiki/File:Patton_St._Mary%27s_RCC.jpg",
+        "description": "Nat visited in 2026."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-78.65, 40.63]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "puerto-rico",
+      "properties": {
+        "city": "San Juan, Puerto Rico",
+        "country": "United States",
+        "kind": "visited",
+        "visits": [
+          {
+            "year": 2026,
+            "who": "both"
+          }
+        ],
+        "photo": "/photos/puerto-rico.jpg",
+        "photoCredit": "Farragutful, CC BY-SA 3.0",
+        "photoSource": "https://commons.wikimedia.org/wiki/File:2013_Old_San_Juan_01.JPG",
+        "description": "Nat and Mel visited together in 2026."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-66.11, 18.47]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "delhi",
+      "properties": {
+        "city": "Delhi, India",
+        "country": "India",
+        "kind": "visited",
+        "visits": [
+          {
+            "year": 2026,
+            "who": "both"
+          }
+        ],
+        "photo": "/photos/delhi.jpg",
+        "photoCredit": "Marcin Białek, CC BY-SA 4.0",
+        "photoSource": "https://commons.wikimedia.org/wiki/File:Jama_Masjid_2011.jpg",
+        "description": "Nat and Mel visited together in 2026."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [77.21, 28.61]
       }
     }
   ]

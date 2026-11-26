@@ -2,7 +2,7 @@ import { XMarkIcon } from "@heroicons/react/24/outline"
 import Image from "next/image"
 import type { RefObject } from "react"
 
-import { formatYears } from "@/lib/format"
+import { formatVisit, formatYears, whoLabels } from "@/lib/format"
 import type { Place } from "@/lib/places"
 
 export type MapPlace = Omit<Place, "coordinates"> & { x: number; y: number }
@@ -62,6 +62,22 @@ export function PlacePanel({
         {place.description.split(/\n{2,}/).map((paragraph) => (
           <p key={paragraph}>{paragraph}</p>
         ))}
+        <div>
+          <h3 className="text-sm font-semibold">Visits</h3>
+          <ul data-testid="place-visits" className="text-sm">
+            {place.visits.map((visit) => (
+              <li
+                key={`${visit.year}-${visit.endYear}-${visit.who}`}
+                className="flex justify-between gap-4 border-b border-base-200 py-1"
+              >
+                <span>{formatVisit(visit)}</span>
+                <span className="text-base-content/70">
+                  {whoLabels[visit.who]}
+                </span>
+              </li>
+            ))}
+          </ul>
+        </div>
         {place.photoCredit && (
           <p className="text-xs text-base-content/60">
             Photo:{" "}

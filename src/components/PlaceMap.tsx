@@ -13,12 +13,20 @@ import {
 } from "react"
 
 import { type MapPlace, PlacePanel } from "@/components/PlacePanel"
-import { formatYears } from "@/lib/format"
+import { formatYears, whoLabels } from "@/lib/format"
+import type { Who } from "@/lib/places"
 
 const MAX_ZOOM = 48
 const FOCUS_ZOOM = 10
 const DOT_RADIUS = 6
 const HIT_RADIUS = 14
+
+const filters = [
+  { value: "all", label: "Everyone" },
+  { value: "both", label: whoLabels.both },
+  { value: "nat", label: "Nat alone" },
+  { value: "mel", label: "Mel alone" },
+] as const satisfies { value: Who | "all"; label: string }[]
 
 const kinds = [
   { kind: "lived", label: "Lived" },
@@ -26,7 +34,7 @@ const kinds = [
 ] as const
 
 export function PlaceMap({
-  places,
+  places: allPlaces,
   width,
   height,
   spherePath,
@@ -44,16 +52,26 @@ export function PlaceMap({
   // Screen pixels per viewBox unit before zooming.
   const [scale, setScale] = useState(0.8)
   const [selectedId, setSelectedId] = useState<string | null>(null)
+  const [who, setWho] = useState<Who | "all">("all")
+  const places = useMemo(
+    () =>
+      who === "all"
+        ? allPlaces
+        : allPlaces.filter((place) =>
+            place.visits.some((visit) => visit.who === who)
+          ),
+    [allPlaces, who]
+  )
   const selected = places.find((place) => place.id === selectedId) ?? null
 
   const center = useMemo<[number, number]>(() => {
-    const xs = places.map((place) => place.x)
-    const ys = places.map((place) => place.y)
+    const xs = allPlaces.map((place) => place.x)
+    const ys = allPlaces.map((place) => place.y)
     return [
       (Math.min(...xs) + Math.max(...xs)) / 2,
       (Math.min(...ys) + Math.max(...ys)) / 2,
     ]
-  }, [places])
+  }, [allPlaces])
 
   useEffect(() => {
     const svg = svgRef.current
@@ -176,6 +194,33 @@ export function PlaceMap({
 
   return (
     <div>
+      <div
+        role="group"
+        aria-label="Show places by who went"
+        className="mb-3 flex flex-wrap gap-2"
+      >
+        {filters.map(({ value, label }) => (
+          <button
+            key={value}
+            type="button"
+            aria-pressed={who === value}
+            data-who={value}
+            onClick={() => {
+              setWho(value)
+              setSelectedId(null)
+            }}
+            className={`btn btn-sm ${who === value ? "btn-neutral" : "btn-ghost"}`}
+          >
+            {label}
+          </button>
+        ))}
+        <p
+          aria-live="polite"
+          className="ml-auto self-center text-sm text-base-content/60"
+        >
+          {places.length} {places.length === 1 ? "place" : "places"}
+        </p>
+      </div>
       <div className="relative overflow-hidden rounded-box border border-base-300 bg-base-200">
         <svg
           ref={svgRef}
