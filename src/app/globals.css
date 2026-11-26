@@ -15,8 +15,25 @@
   --color-link: #265c83;
 }
 
+:root {
+  --map-ocean: #dce7ef;
+  --map-graticule: #cbd9e4;
+  --map-land: #f7f5f0;
+  --map-coast: #b6c3cd;
+  --map-lived: #265c83;
+  --map-visited: #d9773a;
+  --map-halo: #ffffff;
+}
+
 [data-theme="dark"] {
   --color-link: #8fc1e3;
+  --map-ocean: #0f1820;
+  --map-graticule: #18242e;
+  --map-land: #25303a;
+  --map-coast: #3a4855;
+  --map-lived: #8fc1e3;
+  --map-visited: #f0a46b;
+  --map-halo: #0f1820;
 }
 
 body {
@@ -25,15 +42,16 @@ body {
 }
 
 .place-dot circle:last-child {
-  fill: var(--color-link);
-  stroke: var(--color-base-100);
+  fill: var(--map-lived);
+  stroke: var(--map-halo);
+  transition: r 120ms ease-out;
 }
 
 .place-dot[data-kind="visited"] circle:last-child {
-  fill: var(--color-base-100);
-  stroke: var(--color-link);
+  fill: var(--map-visited);
 }
 
+.place-dot:hover circle:last-child,
 .place-dot:focus-visible circle:last-child,
 .place-dot[aria-pressed="true"] circle:last-child {
   stroke: var(--color-base-content);

@@ -110,6 +110,11 @@ try {
     statsDocument.querySelectorAll("[data-country]").length,
     countries.size
   )
+  for (const { id } of geojson.features) {
+    const link = statsDocument.querySelector(`a[data-city="${id}"]`)
+    assert.ok(link, `stats lists ${id}`)
+    assert.equal(link.getAttribute("href"), `/?place=${id}`)
+  }
   const world = await fetch(`${base}/world.svg`)
   assert.equal(world.status, 200)
   assert.match(world.headers.get("content-type") || "", /image\/svg\+xml/)

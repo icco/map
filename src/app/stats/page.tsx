@@ -1,7 +1,14 @@
 import type { Metadata } from "next"
+import Link from "next/link"
 
+import { formatYears } from "@/lib/format"
 import { getPlaces, type Who } from "@/lib/places"
 import { countryStats } from "@/lib/stats"
+
+const kinds = [
+  { kind: "lived", label: "Lived" },
+  { kind: "visited", label: "Visited" },
+] as const
 
 export const metadata: Metadata = {
   title: "Stats",
@@ -76,6 +83,42 @@ export default function Stats() {
           </li>
         ))}
       </ul>
+
+      <div className="mt-10 grid gap-8 sm:grid-cols-2">
+        {kinds.map(({ kind, label }) => (
+          <section key={kind} aria-labelledby={`${kind}-heading`}>
+            <h2
+              id={`${kind}-heading`}
+              className="mb-2 flex items-center gap-2 text-lg font-semibold"
+            >
+              <svg viewBox="-8 -8 16 16" className="size-4" aria-hidden="true">
+                <g className="place-dot" data-kind={kind}>
+                  <circle r={kind === "lived" ? 6 : 4.5} strokeWidth={1.5} />
+                </g>
+              </svg>
+              {label}
+            </h2>
+            <ul>
+              {places
+                .filter((place) => place.kind === kind)
+                .map((place) => (
+                  <li key={place.id}>
+                    <Link
+                      href={`/?place=${place.id}`}
+                      data-city={place.id}
+                      className="flex items-baseline justify-between gap-4 border-b border-base-200 py-2 text-link hover:underline"
+                    >
+                      <span>{place.city}</span>
+                      <span className="shrink-0 text-sm text-base-content/60">
+                        {formatYears(place)}
+                      </span>
+                    </Link>
+                  </li>
+                ))}
+            </ul>
+          </section>
+        ))}
+      </div>
     </div>
   )
 }
