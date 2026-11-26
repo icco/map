@@ -197,7 +197,7 @@ export function PlaceMap({
       <div
         role="group"
         aria-label="Show places by who went"
-        className="mb-3 flex flex-wrap gap-2"
+        className="mx-auto mb-3 flex w-full max-w-[800px] flex-wrap gap-2 px-4"
       >
         {filters.map(({ value, label }) => (
           <button
@@ -221,14 +221,14 @@ export function PlaceMap({
           {places.length} {places.length === 1 ? "place" : "places"}
         </p>
       </div>
-      <div className="relative overflow-hidden rounded-box border border-base-300 bg-base-200">
+      <div className="relative mx-4 overflow-hidden rounded-box border border-base-300 bg-base-200">
         <svg
           ref={svgRef}
           viewBox={`0 0 ${width} ${height}`}
           preserveAspectRatio="xMidYMid slice"
           role="group"
           aria-label="World map of places"
-          className="block aspect-[4/3] w-full cursor-grab touch-none select-none active:cursor-grabbing md:aspect-[1000/487]"
+          className="block aspect-[4/3] w-full cursor-grab touch-none select-none active:cursor-grabbing md:aspect-auto md:h-[calc(100dvh-19rem)] md:min-h-[420px]"
         >
           <g
             transform={`translate(${transform.x},${transform.y}) scale(${transform.k})`}
@@ -310,7 +310,7 @@ export function PlaceMap({
         )}
       </div>
 
-      <div className="mt-8 grid gap-8 sm:grid-cols-2">
+      <div className="mx-auto mt-8 grid w-full max-w-[800px] gap-8 px-4 sm:grid-cols-2">
         {kinds.map(({ kind, label }) => (
           <section key={kind} aria-labelledby={`${kind}-heading`}>
             <h2
