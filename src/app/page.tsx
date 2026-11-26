@@ -14,9 +14,11 @@ export default function Home() {
   })
 
   return (
-    <div className="mx-auto w-full max-w-[800px] px-4 py-8">
-      <h1 className="text-[32px] leading-tight font-normal">{site.name}</h1>
-      <p className="mt-2 mb-6 text-base-content/70">{site.description}</p>
+    <div className="w-full py-8">
+      <div className="mx-auto w-full max-w-[800px] px-4">
+        <h1 className="text-[32px] leading-tight font-normal">{site.name}</h1>
+        <p className="mt-2 mb-6 text-base-content/70">{site.description}</p>
+      </div>
       <PlaceMap
         places={places}
         width={WIDTH}
