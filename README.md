@@ -70,7 +70,7 @@ docker build --secret id=npm_token,env=NODE_AUTH_TOKEN -t map.natwelch.com .
 docker run --rm -p 8080:8080 map.natwelch.com
 ```
 
-CI lints, type checks, checks formatting, builds, and smoke tests every push. Pull requests build the image, and `main` publishes `ghcr.io/icco/map.natwelch.com:main`.
+CI fixes lint and formatting on pull request branches and commits the result, then lints, type checks, builds, and smoke tests. Pull requests build the image, and `main` publishes `ghcr.io/icco/map.natwelch.com:main`.
 
 ## Photo credits
 

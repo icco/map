@@ -13,18 +13,33 @@ jobs:
   check:
     runs-on: ubuntu-latest
     permissions:
-      contents: read
+      contents: write
       packages: read
     env:
       NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      AUTOFIX: ${{ github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository && github.actor != 'dependabot[bot]' }}
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          ref: ${{ env.AUTOFIX == 'true' && github.head_ref || '' }}
       - uses: pnpm/action-setup@73e46992e05b19abd31f2f3c20e0e7370d762115 # v6.1.1
       - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
         with:
           node-version-file: .nvmrc
           cache: pnpm
       - run: pnpm install --frozen-lockfile
+      - name: Fix lint
+        if: env.AUTOFIX == 'true'
+        continue-on-error: true
+        run: pnpm lint:fix
+      - name: Fix formatting
+        if: env.AUTOFIX == 'true'
+        run: pnpm format
+      - name: Commit fixes
+        if: env.AUTOFIX == 'true'
+        uses: stefanzweifel/git-auto-commit-action@d0b01107b5db882071f96de5dd4b54961ea93f4c # v7.2.1
+        with:
+          commit_message: "style: auto-fix lint and formatting"
       - run: pnpm check
       - run: pnpm build
         env:
