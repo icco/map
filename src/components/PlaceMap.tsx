@@ -1,6 +1,5 @@
 "use client"
 
-import { ArrowPathIcon, MinusIcon, PlusIcon } from "@heroicons/react/24/outline"
 import { select } from "d3-selection"
 import {
   zoom,
@@ -9,6 +8,7 @@ import {
   type ZoomTransform,
   zoomTransform,
 } from "d3-zoom"
+import { Minus, Plus, RefreshCw } from "lucide-react"
 import {
   type MouseEvent as ReactMouseEvent,
   useCallback,
@@ -412,7 +412,7 @@ export function PlaceMap({
           aria-label="Zoom in"
           onClick={() => zoomBy(2)}
         >
-          <PlusIcon className="size-4" aria-hidden="true" />
+          <Plus className="size-4" aria-hidden="true" />
         </button>
         <button
           type="button"
@@ -420,7 +420,7 @@ export function PlaceMap({
           aria-label="Zoom out"
           onClick={() => zoomBy(0.5)}
         >
-          <MinusIcon className="size-4" aria-hidden="true" />
+          <Minus className="size-4" aria-hidden="true" />
         </button>
         <button
           type="button"
@@ -428,7 +428,7 @@ export function PlaceMap({
           aria-label="Reset map"
           onClick={reset}
         >
-          <ArrowPathIcon className="size-4" aria-hidden="true" />
+          <RefreshCw className="size-4" aria-hidden="true" />
         </button>
       </div>
 
