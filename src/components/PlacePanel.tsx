@@ -1,4 +1,4 @@
-import { XMarkIcon } from "@heroicons/react/24/outline"
+import { X } from "lucide-react"
 import Image from "next/image"
 import type { RefObject } from "react"
 
@@ -38,7 +38,7 @@ export function PlacePanel({
           aria-label="Close"
           className="btn absolute top-2 right-2 btn-circle btn-sm"
         >
-          <XMarkIcon className="size-5" aria-hidden="true" />
+          <X className="size-5" aria-hidden="true" />
         </button>
       </div>
       <div className="shrink-0 px-4 pt-3 pb-2">
